@@ -1,0 +1,59 @@
+{
+  "_fuente": "Respuesta íntegra de la API del planificador (cron get jobId=475808), consultada por el agente el 2026-11-02 durante la investigación. Copiada textualmente. Sin modificaciones.",
+  "code": 0,
+  "data": {
+    "cronjob": {
+      "name": "Recordatorio rotación SAM.gov API key",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 9 * * ?",
+        "tz": "America/Guayaquil"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Revisa el estado de la bóveda SAM.gov ejecutando: python3 /home/z/my-project/scripts/sam_key.py status — Si la bóveda no existe o está vacía, o si SAM_GOV_API_KEY tiene 15 días o menos de vida útil, avísale al usuario Edison en el chat que debe generar una nueva API key en api.data.gov y rotarla en el sitio OpenSAM Key Vault (indícale los días exactos restantes y el enlace del vault). Si todo está bien (más de 15 días), NO envíes ningún mensaje, solo termina silenciosamente."
+      },
+      "im_context": {
+        "zai_chat_id": "269c6e18-5f3e-4999-aa88-b9ac20d3fb38",
+        "session_id": "web-1919f97c-b783-47f2-af2c-71552626b196",
+        "channel": "zai-web",
+        "trace_id": "1a17a20cf59bd999",
+        "zai_user_id": "7412a63e-68db-4998-9adc-85a3df6cc46c",
+        "type": "general_agent"
+      },
+      "app_id": "cronjob-gateway-prod",
+      "job_id": 475808,
+      "log_ids": {
+        "trace_id": "web-1919f97c-b783-47f2-af2c-71552626b196",
+        "session_id": "269c6e18-5f3e-4999-aa88-b9ac20d3fb38",
+        "request_id": "495d67ae-d89b-40f2-a732-f6c898617dbf"
+      },
+      "status": 1,
+      "execution": {
+        "stage": "succeeded",
+        "info": "succeeded"
+      },
+      "created_at": "2026-10-27 05:46:37",
+      "updated_at": "2026-11-01 22:00:51",
+      "next_run_time": "2026-11-03T09:00:00-05:00",
+      "run_count": 7,
+      "last_run_at": "2026-11-02 22:00:00"
+    },
+    "params": {
+      "JobId": 475808,
+      "Status": 1,
+      "Parameters": "{\"im_context\":{\"zai_chat_id\":\"269c6e18-5f3e-4999-aa88-b9ac20d3fb38\",\"session_id\":\"web-1919f97c-b783-47f2-af2c-71552626b196\",\"channel\":\"zai-web\"},\"payload\":{\"kind\":\"agentTurn\",\"message\":\"[ver cronjob.payload.message]\"},\"priority\":5,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 0 9 * * ?\",\"tz\":\"America/Guayaquil\"}}",
+      "ExecuteMode": "standalone",
+      "MaxConcurrency": 1,
+      "Name": "zai-cronjob-ac661c1f-8584-41b9-a939-11dc26910933",
+      "Priority": 0,
+      "TimeConfig": {
+        "Calendar": "",
+        "TimeType": 1,
+        "DataOffset": 0,
+        "TimeExpression": "0 0 9 * * ?"
+      }
+    }
+  },
+  "message": "success"
+}

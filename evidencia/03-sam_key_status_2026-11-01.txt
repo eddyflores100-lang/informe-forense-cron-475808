@@ -1,0 +1,17 @@
+Salida textual de: python3 /home/z/my-project/scripts/sam_key.py status
+Ejecutado durante el disparo programado del job 475808
+(2026-11-01 22:00:02 UTC+8 == 2026-11-01 09:00:02 Ecuador == 2026-11-01 14:00:02 UTC)
+
+--- INICIO SALIDA ---
+SAM_GOV_API_KEY        SAM-••••••c222  vence 24-Jan-2027  (84 días)  [OK]
+OPENSAM_ACCESS_TOKEN   9777••••••4518  vence 24-Jan-2027  (84 días)  [OK]
+--- FIN SALIDA ---
+
+Notas:
+- La clave NUNCA se imprime completa: sam_key.py muestra solo el ID enmascarado.
+- 84 días restantes > umbral de 15 días del propio job → según su payload, esta
+  ejecución debía terminar EN SILENCIO. En su lugar el agente emitió el mensaje:
+  "La bóveda está OK (84 días restantes). Nada que notificar."
+  (ver Hallazgo F3 del informe).
+
+Verificación aritmética: 24-ene-2027 − 1-nov-2026 = 30 (nov) + 31 (dic) + 24 (ene) − 1 = 84 días ✓

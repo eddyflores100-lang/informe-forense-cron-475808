@@ -1,0 +1,9 @@
+{
+  "_fuente": "Respuesta de la API del planificador (cron delete jobId=475808), ejecutada por el agente el 2026-11-02 (~16:25 Ecuador / 21:25 UTC) tras concluir que la tarea carecía de orden del usuario.",
+  "code": 0,
+  "data": {
+    "id": 475808,
+    "jobId": 475808
+  },
+  "message": "success"
+}

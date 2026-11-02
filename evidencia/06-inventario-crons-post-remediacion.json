@@ -1,0 +1,11 @@
+{
+  "_fuente": "Respuesta íntegra de la API del planificador (cron list), ejecutada por el agente el 2026-11-02 21:29 UTC tras eliminar el job 475808. Verificación de que no queda ninguna otra automatización programada en la cuenta.",
+  "code": 0,
+  "data": {
+    "total": 0,
+    "page": 1,
+    "pageSize": 9999,
+    "data": []
+  },
+  "message": "success"
+}

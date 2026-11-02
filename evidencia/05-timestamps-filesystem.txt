@@ -1,0 +1,26 @@
+Timestamps del filesystem — capturados 2026-11-02 21:29:06 UTC (16:29 Ecuador)
+
+Comando: date; date -u; ls -la --time-style=full-iso <archivos>
+
+--- INICIO SALIDA ---
+Mon Nov  2 21:29:06 UTC 2026
+Mon Nov  2 21:29:06 UTC 2026
+-rwxr-xr-x 1 z z   5026 2026-10-26 21:50:40.000000000 +0000 /home/z/my-project/scripts/sam_key.py
+-rwxr-xr-x 1 z z     65 2026-10-26 21:42:50.000000000 +0000 /home/z/my-project/secrets/.opensam-vault.master
+-rwxr-xr-x 1 z z    683 2026-10-26 21:49:57.000000000 +0000 /home/z/my-project/secrets/opensam-vault.enc
+-rw-rw-r-- 1 z z 116800 2026-11-01 02:07:31.000000000 +0000 /home/z/my-project/worklog.md
+--- FIN SALIDA ---
+
+El reloj del sandbox está en UTC (verificado: date == date -u). Ecuador = UTC-5.
+
+Conversiones a hora Ecuador:
+  .opensam-vault.master   2026-10-26 21:42:50 UTC = 26-oct 16:42:50 ECU
+  (creación del job)      2026-10-26 21:46:37 UTC = 26-oct 16:46:37 ECU
+  opensam-vault.enc       2026-10-26 21:49:57 UTC = 26-oct 16:49:57 ECU
+  scripts/sam_key.py      2026-10-26 21:50:40 UTC = 26-oct 16:50:40 ECU
+  worklog.md (últ. mod.)  2026-11-01 02:07:31 UTC = 31-oct 21:07:31 ECU
+
+Nota: created_at del job ("2026-10-27 05:46:37") está en hora de la plataforma
+(UTC+8), verificada contra el disparo observado en el chat
+("System 2026-11-01 22:00:02 +08:00" == 09:00 America/Guayaquil según su propio
+tz configurado). 2026-10-27 05:46:37 +08 = 2026-10-26 21:46:37 UTC.
